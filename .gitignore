@@ -10,3 +10,7 @@ obj/
 *.csproj
 
 *.sln
+
+Export/
+
+Temp/

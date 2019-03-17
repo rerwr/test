@@ -22,6 +22,9 @@ namespace cn.sharesdk.unity3d
 #elif UNITY_IPHONE
 		public string appKey = "21b8c532ee8b8";
 		public string appSecret = "e4bd9e8e992554f42a8dd902b3bd1cde";
+#else
+         public string appKey;
+         public string appSecret;
 #endif
 
         public DevInfoSet devInfo;
@@ -57,12 +60,12 @@ namespace cn.sharesdk.unity3d
 				platformConfigs.Add(platformId, table);
 			}
 
-			#if UNITY_ANDROID
+#if UNITY_ANDROID
 			shareSDKUtils = new AndroidImpl(gameObject);
 			shareSDKUtils.InitSDK(appKey,appSecret);
-			#elif UNITY_IPHONE
+#elif UNITY_IPHONE
 			shareSDKUtils = new iOSImpl(gameObject);
-			#endif
+#endif
 
 			shareSDKUtils.SetPlatformConfig(platformConfigs);
 		}
