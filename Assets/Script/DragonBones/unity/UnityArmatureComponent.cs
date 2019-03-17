@@ -254,7 +254,7 @@ namespace DragonBones
 
 		#if UNITY_EDITOR
 		private bool _isPrefab(){
-			return PrefabUtility.GetCorrespondingObjectFromSource(gameObject) == null 
+			return PrefabUtility.GetPrefabObject(gameObject) == null 
 				&& PrefabUtility.GetPrefabObject(gameObject) != null;
 		}
 		#endif

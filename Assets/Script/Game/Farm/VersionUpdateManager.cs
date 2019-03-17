@@ -11,7 +11,7 @@ using System.Text;
 namespace Game {
     public class VersionUpdateManager : Singleton<VersionUpdateManager> {
 
-        public static int version=17;
+        public static int version=18;
 
         private AndroidJavaClass UnityPlayer;
         private AndroidJavaClass Intent;
@@ -204,7 +204,7 @@ namespace Game {
             UpdateUrl = jr.result[maxIndex].urlIos;
             return jr.result[maxIndex].urlIos;
 #endif
-
+            return "";
         }
 
     }

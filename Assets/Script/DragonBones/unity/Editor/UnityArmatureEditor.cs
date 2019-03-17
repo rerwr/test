@@ -359,7 +359,7 @@ namespace DragonBones
 		}
 
 		private bool _isPrefab(){
-			return PrefabUtility.GetCorrespondingObjectFromSource(_armatureComponent.gameObject) == null 
+			return PrefabUtility.GetPrefabObject(_armatureComponent.gameObject) == null 
 				&& PrefabUtility.GetPrefabObject(_armatureComponent.gameObject) != null;
 		}
 

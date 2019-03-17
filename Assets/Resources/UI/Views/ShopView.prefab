@@ -10,7 +10,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1911877214080118}
-  m_IsPrefabParent: 1
+  m_IsPrefabParent: 0
 --- !u!1 &1014031954323060
 GameObject:
   m_ObjectHideFlags: 1
@@ -1379,7 +1379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6BCF\u65E5\u5582\u72D7\u7CAE\u4E00\u6B21\u5373\u53EF"
+  m_Text: "\u5582\u72D7\u7CAE\u53EF\u4EE5\u63D0\u5347\u72D7\u72D7\u7684\u7B49\u7EA7\uFF0C\u63D0\u9AD8\u6293\u8D3C\u6548\u7387\n"
 --- !u!114 &114042756930900424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5018,8 +5018,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -298.02505, y: -361.6}
-  m_SizeDelta: {x: 178.05, y: 59.2}
+  m_AnchoredPosition: {x: -304.4, y: -363.79996}
+  m_SizeDelta: {x: 242.1, y: 116.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224561316079852870
 RectTransform:
