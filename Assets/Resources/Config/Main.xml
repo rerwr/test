@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--正式服端口-->
+<LoginConfig serverIP="119.23.48.181"
+            serverPort="8002">
+<!--<LoginConfig serverIP="39.108.134.200"-->
+<!--            serverPort="8003">-->
+<!--  <LoginConfig serverIP="39.108.134.200"-->
+<!--               serverPort="8004">-->
+</LoginConfig>
+  

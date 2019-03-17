@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ViewPathList>
+<ViewURL name="1">
+  <URL>Sprites/Seeds/Seed_1</URL>
+</ViewURL>
+  <ViewURL name="2">
+    <URL>Sprites/Seeds/Seed_2</URL>
+  </ViewURL>
+  <ViewURL name="3">
+    <URL>Sprites/Seeds/Seed_3</URL>
+  </ViewURL>
+  <ViewURL name="4">
+    <URL>Sprites/Seeds/Seed_4</URL>
+  </ViewURL>
+  <ViewURL name="5">
+    <URL>Sprites/Seeds/Seed_5</URL>
+  </ViewURL>
+  <ViewURL name="6">
+    <URL>Sprites/Seeds/Seed_6</URL>
+  </ViewURL>
+  <ViewURL name="7">
+    <URL>Sprites/Seeds/Seed_7</URL>
+  </ViewURL>
+  <ViewURL name="101">
+    <URL>Sprites/Results/Result_101</URL>
+  </ViewURL>
+  <ViewURL name="102">
+    <URL>Sprites/Results/Result_102</URL>
+  </ViewURL>
+  <ViewURL name="103">
+    <URL>Sprites/Results/Result_103</URL>
+  </ViewURL>
+  <ViewURL name="104">
+    <URL>Sprites/Results/Result_104</URL>
+  </ViewURL>
+  <ViewURL name="105">
+    <URL>Sprites/Results/Result_105</URL>
+  </ViewURL>
+  <ViewURL name="106">
+    <URL>Sprites/Results/Result_106</URL>
+  </ViewURL>
+  <ViewURL name="107">
+    <URL>Sprites/Results/Result_107</URL>
+  </ViewURL>
+  <ViewURL name="301">
+    <URL>Sprites/Oils/PrimaryOil/POil_301</URL>
+  </ViewURL>
+  <ViewURL name="302">
+    <URL>Sprites/Oils/PrimaryOil/POil_302</URL>
+  </ViewURL>
+  <ViewURL name="303">
+    <URL>Sprites/Oils/PrimaryOil/POil_303</URL>
+  </ViewURL>
+  <ViewURL name="304">
+    <URL>Sprites/Oils/PrimaryOil/POil_304</URL>
+  </ViewURL>
+  <ViewURL name="305">
+    <URL>Sprites/Oils/PrimaryOil/POil_305</URL>
+  </ViewURL>
+  <ViewURL name="306">
+    <URL>Sprites/Oils/PrimaryOil/POil_306</URL>
+  </ViewURL>
+  <ViewURL name="307">
+    <URL>Sprites/Oils/PrimaryOil/POil_307</URL>
+  </ViewURL>
+  <ViewURL name="401">
+    <URL>Sprites/Oils/SemiOil/SEOil_401</URL>
+  </ViewURL>
+  <ViewURL name="402">
+    <URL>Sprites/Oils/SemiOil/SEOil_402</URL>
+  </ViewURL>
+  <ViewURL name="403">
+    <URL>Sprites/Oils/SemiOil/SEOil_403</URL>
+  </ViewURL>
+  <ViewURL name="404">
+    <URL>Sprites/Oils/SemiOil/SEOil_404</URL>
+  </ViewURL>
+  <ViewURL name="405">
+    <URL>Sprites/Oils/SemiOil/SEOil_405</URL>
+  </ViewURL>
+  <ViewURL name="406">
+    <URL>Sprites/Oils/SemiOil/SEOil_406</URL>
+  </ViewURL>
+  <ViewURL name="407">
+    <URL>Sprites/Oils/SemiOil/SEOil_407</URL>
+  </ViewURL>
+  <ViewURL name="501">
+    <URL>Sprites/Oils/SeniorOil/SOil_501</URL>
+  </ViewURL>
+  <ViewURL name="502">
+    <URL>Sprites/Oils/SeniorOil/SOil_502</URL>
+  </ViewURL>
+  <ViewURL name="503">
+    <URL>Sprites/Oils/SeniorOil/SOil_503</URL>
+  </ViewURL>
+  <ViewURL name="504">
+    <URL>Sprites/Oils/SeniorOil/SOil_504</URL>
+  </ViewURL>
+  <ViewURL name="505">
+    <URL>Sprites/Oils/SeniorOil/SOil_505</URL>
+  </ViewURL>
+  <ViewURL name="506">
+    <URL>Sprites/Oils/SeniorOil/SOil_506</URL>
+  </ViewURL>
+  <ViewURL name="507">
+    <URL>Sprites/Oils/SeniorOil/SOil_507</URL>
+  </ViewURL>
+  <ViewURL name="601">
+    <URL>Sprites/DogFoods/DogFood_601</URL>
+  </ViewURL>
+  <ViewURL name="701">
+    <URL>Sprites/Fertilizers/Fertilizer_701</URL>
+  </ViewURL>
+  <ViewURL name="702">
+    <URL>Sprites/Oils/SeniorOil/Formula_1001</URL>
+  </ViewURL>
+
+  <ViewURL name="801">
+    <URL>Sprites/Oils/Produce/Produce_801</URL>
+  </ViewURL>
+  <ViewURL name="802">
+    <URL>Sprites/Oils/Produce/Produce_802</URL>
+  </ViewURL>
+  <ViewURL name="803">
+    <URL>Sprites/Oils/Produce/Produce_803</URL>
+  </ViewURL>
+  <ViewURL name="804">
+    <URL>Sprites/Oils/SeniorOil/Elixir_801</URL>
+  </ViewURL>
+  <ViewURL name="805">
+    <URL>Sprites/Oils/Produce/Produce_805</URL>
+  </ViewURL>
+  <ViewURL name="806">
+    <URL>Sprites/Oils/Produce/Produce_806</URL>
+  </ViewURL>
+  <ViewURL name="807">
+    <URL>Sprites/Oils/Produce/Produce_807</URL>
+  </ViewURL> 
+  
+  
+  
+  
+  <ViewURL name="901">
+    <URL>Sprites/otherInMemory/shadow_801</URL>
+  </ViewURL>
+  <ViewURL name="902">
+    <URL>UI/Get</URL>
+  </ViewURL>
+  <ViewURL name="903">Resources
+    <URL>UI/grass</URL>
+  </ViewURL>
+  <ViewURL name="904">
+    <URL>UI/water</URL>
+  </ViewURL>
+  <ViewURL name="905">
+    <URL>UI/worm</URL>
+  </ViewURL>
+
+</ViewPathList>
+
