@@ -47,7 +47,13 @@ namespace Game
         }
         private void OnClickQuesBtn()
         {
-           SystemMsgView.SystemFunction(Function.CloseDialog, "<size=22>合成规则：\r\n1.初级工厂中100个果实数量可以合成1个初级精油。\r\n\n2.高级工厂中2个初级精油可以合成1个半成品的精油\r\n\n3.当有40个半成品精油时，系统将自动合1个高级精油\r\n\n4.实物工厂中高级精油可以配合神秘配方等材料合成用于兑换的实物</size>" );
+            
+            string content= "合成规则：\r\n1.初级工厂中100个果实数量可以合成1个初级精油。\r\n\n2.高级工厂中2个初级精油可以合成1个半成品的精油\r\n\n3.当有40个半成品精油时，系统将自动合1个高级精油\r\n\n4.实物工厂中高级精油可以配合神秘配方等材料合成用于兑换的实物";
+            if (GameTextDataMgr.Instance.TextDatas.ContainsKey(8) && !string.IsNullOrEmpty(GameTextDataMgr.Instance.TextDatas[8].content))
+            {
+                content = GameTextDataMgr.Instance.TextDatas[8].content;
+            }
+            SystemMsgView.SystemFunction(Function.CloseDialog, "<size=22>"+content+"</size>" );
         }
         private void OnClickCloseBtn() {
             ViewMgr.Instance.Close(ViewNames.FactoryView);

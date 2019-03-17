@@ -1,0 +1,16 @@
+
+Library/
+
+Packages/
+
+obj/
+
+\.vs/
+
+*.csproj
+
+*.sln
+
+Export/
+
+Temp/

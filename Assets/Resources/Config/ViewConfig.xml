@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--closetype：Hide,Destroy,
+    viewtype:Widow,dialog,full
+    
+-->
+<ViewList>
+  <ViewCo name="LoginView">
+    <viewtype>Full</viewtype>
+    <closetype>Destroy</closetype>
+
+  </ViewCo>
+  <ViewCo name="CommonView">
+    <viewtype>Window</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+  <ViewCo name="CalendarView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+  <ViewCo name="PayChooseView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+
+  <ViewCo name="PlowNeedView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+  <ViewCo name="RankingListView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+  <ViewCo name="ShopView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+ 
+  <ViewCo name="StoreView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+  <ViewCo name="FriendsListView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+  <ViewCo name="ShareView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo> 
+  <ViewCo name="SettingView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+  <ViewCo name="SystemMsgView">
+    <viewtype>Full</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+  <ViewCo name="CommitView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+    <ViewCo name="FactoryView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+    <ViewCo name="MsgListView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+    <ViewCo name="CreateNewPlayerView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+
+  <ViewCo name="SeedBarView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+  <ViewCo name="PlayerInfoView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+
+  <ViewCo name="DogInfoView">
+    <viewtype>Dialog</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+
+  <ViewCo name="ChatView">
+    <viewtype>Window</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+
+  <ViewCo name="IntroduceView">
+    <viewtype>Full</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+  <ViewCo name="OnLineView">
+    <viewtype>Full</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+  <ViewCo name="TimeBarView">
+    <viewtype>Window</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo>
+  <ViewCo name="UpdateView">
+    <viewtype>Window</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+
+  <ViewCo name="JYSenseView">
+    <viewtype>Full</viewtype>
+    <closetype>Hide</closetype>
+  </ViewCo> 
+  <ViewCo name="StrategyView">
+    <viewtype>Full</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+  <ViewCo name="HelpView">
+    <viewtype>Full</viewtype>
+    <closetype>Destroy</closetype>
+  </ViewCo>
+</ViewList>

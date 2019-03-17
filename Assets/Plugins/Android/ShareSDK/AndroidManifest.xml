@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ShengFei.Garden"
+	>
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+ 
+
+
+  <!-- 蓝牙分享所需的权限 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+-->
+
+  <application
+  android:theme="@style/UnityThemeSelector"
+  android:icon="@drawable/app_icon"
+      android:label="@string/app_name"
+      android:debuggable="true">
+
+    <activity
+        android:name="com.mob.tools.MobUIShell"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="stateHidden|adjustResize" >
+      <!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+      <intent-filter android:priority="1000" >
+        <data android:scheme="tencent100371282" />
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+      </intent-filter>
+      
+      <activity android:label="@string/app_name" android:screenOrientation="fullSensor" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection" android:name="com.xx.xx.UnityPlayerActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+          <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+        <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+      </activity>
+
+      <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.ShengFei.Garden.fileprovider"
+        android:grantUriPermissions="true"
+        android:exported="false">
+        <meta-data
+          android:name="android.support.FILE_PROVIDER_PATHS"
+          android:resource="@xml/filepaths" />
+      </provider>
+    </activity>
+
+    <!-- 微信分享回调 -->
+    <activity
+        android:name="com.ShengFei.Garden.wxapi.WXEntryActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:exported="true" >
+    </activity>
+
+    <activity
+      android:name="com.alipay.sdk.pay.demo.AlipayDemoActivity"
+     
+      android:label="@string/app_name" >
+     
+    </activity>
+
+    <activity
+      android:name="com.rect.avatar.UserAvatarActivity"
+      android:theme="@android:style/Theme.Translucent"
+      android:configChanges="keyboardHidden|orientation|screenSize">
+    </activity>
+    <!-- 微信支付回调 -->
+    <activity
+      android:name=".PayActivity"
+
+      android:exported="true"
+      android:launchMode="singleTop">
+
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:scheme="wxb8333bfcc2e67e9d"/>
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name=".wxapi.WXPayEntryActivity" 
+      android:exported="true"
+      android:launchMode="singleTop"/>
+    
+    
+    
+    <!-- alipay sdk begin -->
+
+    <activity
+      android:name="com.alipay.sdk.app.H5AlipayActivity"
+      android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+      android:exported="false"
+      android:screenOrientation="behind"
+      android:windowSoftInputMode="adjustResize|stateHidden" >
+    </activity>
+    <activity
+      android:name="com.alipay.sdk.app.H5AuthActivity"
+      android:configChanges="orientation|keyboardHidden|navigation"
+      android:exported="false"
+      android:screenOrientation="behind"
+      android:windowSoftInputMode="adjustResize|stateHidden" >
+    </activity>
+
+    <!-- alipay sdk end -->
+    
+    <receiver android:name="net.agasper.unitynotification.UnityNotificationManager"></receiver>
+
+
+    <meta-data android:name="Mob-AppKey" android:value="215158344a110 "/>
+    <meta-data android:name="Mob-AppSecret" android:value="dd0ca7611962b234f54681a04c824d00"/>
+  </application>
+</manifest>

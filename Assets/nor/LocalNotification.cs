@@ -1,13 +1,14 @@
 ﻿using System;
 using UnityEngine;
+#if UNITY_IOS
 using UnityEngine.iOS;
-using System.Collections.Generic;
+# endif
 
 public class LocalNotification
 {
-    #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
     private static string fullClassName = "net.agasper.unitynotification.UnityNotificationManager";
-    #endif
+#endif
 
 
     public static int SendNotification(TimeSpan delay, string title, string message, Color32 bgColor, bool sound = true, bool vibrate = true, bool lights = true, string bigIcon = "")
@@ -37,7 +38,7 @@ public class LocalNotification
 		bgColor.r * 65536 + bgColor.g * 256 + bgColor.b, Application.identifier);
         }
         return id;
-#elif UNITY_IOS&&!UNITY_EDITOR
+#elif UNITY_IOS && !UNITY_EDITOR
         UnityEngine.iOS.LocalNotification notification = new UnityEngine.iOS.LocalNotification();
         DateTime now = DateTime.Now;
         DateTime fireDate = new DateTime(now.Year, now.Month, now.Day, now.Hour, now.Minute, now.Second).AddSeconds(delayMs);
@@ -53,7 +54,7 @@ public class LocalNotification
         return (int)fireDate.Ticks;
 #else
         return 0;
-        #endif
+#endif
     }
 
     public static int SendRepeatingNotification(TimeSpan delay, TimeSpan timeout, string title, string message, Color32 bgColor, bool sound = true, bool vibrate = true, bool lights = true, string bigIcon = "")
@@ -69,7 +70,7 @@ public class LocalNotification
 
     public static int SendRepeatingNotification(int id, long delayMs, long timeoutMs, string title, string message, Color32 bgColor, bool sound = true, bool vibrate = true, bool lights = true, string bigIcon = "")
     {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         AndroidJavaClass pluginClass = new AndroidJavaClass(fullClassName);
         if (pluginClass != null)
         {
@@ -78,23 +79,23 @@ public class LocalNotification
 		bgColor.r * 65536 + bgColor.g * 256 + bgColor.b, Application.identifier);
         }
         return id;
-        #elif UNITY_IOS && !UNITY_EDITOR
+#elif UNITY_IOS && !UNITY_EDITOR
         throw new System.NotImplementedException();
-        #else
+#else
         return 0;
-        #endif
+#endif
     }
 
     public static void CancelNotification(int id)
     {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         AndroidJavaClass pluginClass = new AndroidJavaClass(fullClassName);
         if (pluginClass != null) {
             pluginClass.CallStatic("CancelPendingNotification", id);
         }
-        #endif
+#endif
 
-        #if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS && !UNITY_EDITOR
         foreach (UnityEngine.iOS.LocalNotification notif in UnityEngine.iOS.NotificationServices.scheduledLocalNotifications) 
         { 
             if ((int)notif.fireDate.Ticks == id)
@@ -102,20 +103,20 @@ public class LocalNotification
                 UnityEngine.iOS.NotificationServices.CancelLocalNotification(notif);
             }
         }
-        #endif
+#endif
     }
 
     public static void ClearNotifications()
     {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         AndroidJavaClass pluginClass = new AndroidJavaClass(fullClassName);
         if (pluginClass != null) {
             pluginClass.CallStatic("ClearShowingNotifications");
         }
-        #endif
+#endif
 
-        #if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS && !UNITY_EDITOR
         UnityEngine.iOS.NotificationServices.ClearLocalNotifications();
-        #endif
+#endif
     }
 }
